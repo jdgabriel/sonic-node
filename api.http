@@ -1,0 +1,20 @@
+GET http://localhost:3000
+accept: application/json
+
+###
+POST http://localhost:3000
+content-Type: application/json
+
+{
+  "title": "Minhas tarefas",
+  "content": "Fazer café"
+}
+
+###
+GET http://localhost:3000/search?q=café
+content-Type: application/json
+
+###
+GET http://localhost:3000/suggest?s=caf
+content-Type: application/json
+
